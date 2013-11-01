@@ -1,7 +1,7 @@
 package 'dnsmasq'
 
 if(node[:dnsmasq][:enable_dns])
-  include_recipe 'hosts_file'
+  include_recipe 'hostsfile'
 end
 
 service 'dnsmasq' do
